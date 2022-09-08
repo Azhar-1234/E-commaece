@@ -34,7 +34,9 @@
                             <h4>Who are we?</h4>
                         </div>
                         <div class="col-12 text-justify">
-                            <p>{{$headers->footer_about}}</p>
+                            @foreach($header as $headers)
+                                 <p>{{$headers->footer_about}}</p>
+                             @endforeach
                         </div>
                     </div>
                 </div>
