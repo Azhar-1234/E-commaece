@@ -39,7 +39,10 @@
             <div class="row">
                 <div class="col-lg-auto">
                     <div class="site-logo text-center text-lg-left">
+                    @foreach($header as $headers)
+
                         <a href="{{route('/')}}">{{$headers->logo_name}}</a>
+                    @endforeach
                     </div>
                 </div>
                 <div class="col-lg-5 mx-auto mt-4 mt-lg-0">
